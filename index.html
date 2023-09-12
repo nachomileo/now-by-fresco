@@ -99,7 +99,7 @@
 
 										        details += '<article>';
 
-										        try { var value = row.c[2].f ? row.c[2].f : row.c[2].v }
+										        try { var value = row.c[3].f ? row.c[3].f : row.c[3].v }
 										        catch(e){ var value = '' }
 
 										        details += '<a href="#" class="image"><img src="' + value + '" alt="" />';
@@ -109,22 +109,27 @@
 
 										        details += '<header><h2><a href="#">' + value + '</a></h2>';
 
-										        try { var value = row.c[3].f ? row.c[3].f : row.c[3].v }
+										        try { var value = row.c[1].f ? row.c[1].f : row.c[1].v }
 										        catch(e){ var value = '' }
 
-										        details += '<ul class="meta"><li>' + value + '</li>';
+										        details += '<h3>' + value + '</h3>';
 
 										        try { var value = row.c[4].f ? row.c[4].f : row.c[4].v }
 										        catch(e){ var value = '' }
 
-										        details += '<li>' + value + '</li>';
+										        details += '<ul class="meta"><li>' + value + '</li>';
 
 										        try { var value = row.c[5].f ? row.c[5].f : row.c[5].v }
 										        catch(e){ var value = '' }
 
+										        details += '<li>' + value + '</li>';
+
+										        try { var value = row.c[6].f ? row.c[6].f : row.c[6].v }
+										        catch(e){ var value = '' }
+
 										        details += '<li>' + value + '</li></ul></header>';
 
-										        try { var value = row.c[1].f ? row.c[1].f : row.c[1].v }
+										        try { var value = row.c[2].f ? row.c[2].f : row.c[2].v }
 										        catch(e){ var value = '' }
 
 										        details += '<p>' + value + '</p>';
@@ -139,7 +144,7 @@
 									<!-- Faiolver text -->
 									<article style="width: 100%; text-align: center;">
 										<header>
-											<h2><a href="#">We are having issues, please try again later :(</a></h2>
+											<h2><a href="#">Estamos teniendo algún problema. Intenta nuevamente más tarde :(</a></h2>
 											<a href="#"><img width="40%" style="min-width: 250px; border-radius: 22px;" src="images/error.jpg" alt=""></a>
 										</header>
 									</article>
