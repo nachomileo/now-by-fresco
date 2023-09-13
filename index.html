@@ -49,10 +49,10 @@
 							<article class="full">
 								<img src="images/mad.jpg" alt="" data-position="center" />
 								<div class="content">
-									<h2><a href="#">NOW in MADRID</a></h2>
-									<p>Lorem feugiat veroeros dolor sit amet tempus adipiscing amet sed aliquam feugiat veroeros lorem ipsum dolor sit amet consequat tempus adipiscing.</p>
+									<h2><a href="#">NOW / MADRID</a></h2>
+									<p>Un pantallazo de la agenda cultural contemporánea de Madrid. <br />Curada por fresco. y por la comunidad.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Add an exposition or event</a></li>
+										<li><a href="https://wa.me/+34695848354?text=Hola%20fresco" class="button">Sugiérenos tu exposición o evento aquí</a></li>
 									</ul>
 								</div>
 							</article>
@@ -99,10 +99,15 @@
 
 										        details += '<article>';
 
+										        try { var value = row.c[7].f ? row.c[7].f : row.c[7].v }
+										        catch(e){ var value = '' }
+
+										        details += '<a target="_blank" href="' + value + '" class="image">';
+
 										        try { var value = row.c[3].f ? row.c[3].f : row.c[3].v }
 										        catch(e){ var value = '' }
 
-										        details += '<a href="#" class="image"><img src="' + value + '" alt="" />';
+										        details += '<img src="' + value + '" alt="" />';
 
 										        try { var value = row.c[0].f ? row.c[0].f : row.c[0].v }
 										        catch(e){ var value = '' }
@@ -160,13 +165,10 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Contribute</h2>
-								<p>Contribution TEXT TBC.</p>
+								<h2>About</h2>
+								<p>Hemos creado este espacio colaborativo para compartir la actividad cultural de las principales ciudades de España, empezando por Madrid y Barcelona (pronto iremos añadiendo más). Habrá algunas actividades curadas por fresco. y otras abiertas a la comunidad.</p>
 								<ul class="icons style2">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+									<li><a href="https://instagram.com/fresco.arte" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 							</section>
 							
