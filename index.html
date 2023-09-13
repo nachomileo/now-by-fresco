@@ -1,9 +1,21 @@
 <!DOCTYPE HTML>
 <!--
-	Prject by nachomileo - Template by Pixelarity
+	Project by fresco. & nachomileo - Template by Pixelarity
 -->
 <html>
 	<head>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-X755CVYVVC"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-X755CVYVVC');
+		</script>
+
+
 		<title>NOW by fresco.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -112,7 +124,7 @@
 										        try { var value = row.c[0].f ? row.c[0].f : row.c[0].v }
 										        catch(e){ var value = '' }
 
-										        details += '<header><h2><a href="#">' + value + '</a></h2>';
+										        details += '<header><h2><a>' + value + '</a></h2>';
 
 										        try { var value = row.c[1].f ? row.c[1].f : row.c[1].v }
 										        catch(e){ var value = '' }
