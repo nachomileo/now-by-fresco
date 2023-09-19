@@ -112,15 +112,20 @@
 
 										        details += '<article>';
 
+										        try { var value = row.c[7].f ? row.c[7].f : row.c[7].v }
+										        catch(e){ var value = '' }
+
+										        details += '<a target="_blank" href="' + value + '" class="image">';
+
 										        try { var value = row.c[3].f ? row.c[3].f : row.c[3].v }
 										        catch(e){ var value = '' }
 
-										        details += '<a href="#" class="image"><img src="' + value + '" alt="" />';
+										        details += '<img src="' + value + '" alt="" />';
 
 										        try { var value = row.c[0].f ? row.c[0].f : row.c[0].v }
 										        catch(e){ var value = '' }
 
-										        details += '<header><h2><a href="#">' + value + '</a></h2>';
+										        details += '<header><h2><a>' + value + '</a></h2>';
 
 										        try { var value = row.c[1].f ? row.c[1].f : row.c[1].v }
 										        catch(e){ var value = '' }
