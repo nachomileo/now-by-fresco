@@ -4084,3 +4084,10 @@
 	width: 8em;
     margin-top: 28px;
 }
+
+.label {
+	border-radius: 12px;
+    padding: 6px 20px !important;
+    color: white;
+    border-left-color: white !important;
+}
