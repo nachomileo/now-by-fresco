@@ -145,7 +145,15 @@
 										        try { var value = row.c[6].f ? row.c[6].f : row.c[6].v }
 										        catch(e){ var value = '' }
 
-										        details += '<li>' + value + '</li></ul></header>';
+										        details += '<li>' + value + '</li>';
+
+										        try { var value = row.c[8].f ? row.c[8].f : row.c[8].v }
+										        catch(e){ var value = '' }
+
+										        try { var color = row.c[9].f ? row.c[9].f : row.c[9].v }
+										        catch(z){ var color = '' }
+
+										        details += '<li class="label" style="background-color:' + color + '">' + value + '</li></ul></header>';
 
 										        try { var value = row.c[2].f ? row.c[2].f : row.c[2].v }
 										        catch(e){ var value = '' }
